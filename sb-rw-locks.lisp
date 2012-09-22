@@ -38,6 +38,7 @@
 (defpackage :sb-rw-locks
   (:use :cl :sb-thread :sb-ext :sb-int :sb-sys)
   (:export
+   #:make-frlock
    #:frlock
    #:frlock-p
    #:frlock-name
@@ -48,6 +49,10 @@
    #:frlock-write-lock
    #:frlock-write-unlock
 
+   #:make-brlock
+   #:brlock
+   #:brlock-p
+   #:brlock-name
    #:brlock-write-lock
    #:brlock-write-unlock
    #:brlock-read-lock
